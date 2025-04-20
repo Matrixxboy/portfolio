@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@source "../views";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .glass-dark {
+    @apply bg-white/20 dark:bg-black/30 backdrop-blur-md border border-white/30 dark:border-white/10 shadow-lg;
+  }
+  .glass-white{
+    @apply bg-white/5 backdrop-blur-md border border-white/5 dark:border-white/5 shadow-lg;
+  }
+  .bg-color-primary{
+    background-color:#1A092A;
+  }
+  .text-color-primary{
+    color:#F0E6F6;
+  }
+  .text-color-secondary{
+    color:#BBAED0;
+  }
+}
