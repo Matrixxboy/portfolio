@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
+    public function admin(){
+        return view("Admin");
+    }
     public function home(){
         return view("home");
     }
@@ -15,11 +18,14 @@ class PageController extends Controller
     public function projectsPage(){
         return view("Projects");
     }
+    public function certificatePage(){
+        return view("Certificate");
+    }
     public function contactMe(){
         return view("Contact Me");
     }
-    public function admin(){
-        return view("Admin");
+    public function Blogs(){
+        return view("Blogs");
     }
 }
 
