@@ -5,9 +5,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const ctx = canvas.getContext('2d');
 
+    // Limit device pixel ratio for better mobile performance
+    const DPR = Math.min(window.devicePixelRatio, 1.5);
+
     function setCanvasSize() {
-        canvas.width = window.innerWidth * window.devicePixelRatio;
-        canvas.height = window.innerHeight * window.devicePixelRatio;
+        canvas.width = window.innerWidth * DPR;
+        canvas.height = window.innerHeight * DPR;
 
         canvas.style.width = `${window.innerWidth}px`;
         canvas.style.height = `${window.innerHeight}px`;
@@ -72,7 +75,10 @@ document.addEventListener("DOMContentLoaded", () => {
             this.height = height;
             this.ctx = context;
             this.particlesArray = [];
-            this.gap = 25;
+
+            // Fewer particles on mobile
+            this.gap = window.innerWidth < 768 ? 40 : 25;
+
             this.mouse = {
                 radius: 3000,
                 x: 0,
@@ -80,9 +86,19 @@ document.addEventListener("DOMContentLoaded", () => {
             };
 
             window.addEventListener('mousemove', e => {
-                this.mouse.x = e.clientX * window.devicePixelRatio;
-                this.mouse.y = e.clientY * window.devicePixelRatio;
+                this.mouse.x = e.clientX * DPR;
+                this.mouse.y = e.clientY * DPR;
             });
+
+            // Add touch support
+            window.addEventListener('touchmove', e => {
+                const touch = e.touches[0];
+                this.mouse.x = touch.clientX * DPR;
+                this.mouse.y = touch.clientY * DPR;
+            });
+
+            // Prevent scroll during touch interaction
+            canvas.addEventListener('touchmove', e => e.preventDefault(), { passive: false });
 
             window.addEventListener('resize', () => {
                 setCanvasSize();
@@ -117,5 +133,6 @@ document.addEventListener("DOMContentLoaded", () => {
         effect.update();
         requestAnimationFrame(animate);
     }
+
     animate();
 });

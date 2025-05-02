@@ -5,12 +5,14 @@
         <!-- Typewriter Header -->
 
         <!-- Typewriter Header -->
-        <!-- Typewriter Header (2 lines, single effect) -->
-        <div class="mx-auto text-center">
-            <h1 class="typewriter lg:text-5xl md:text-4xl sm:text-3xl font-bold text-white leading-snug">
-                Crafting Code with Passion, Building Dreams with Skill.
-            </h1>
-        </div>
+        <div class="mx-auto text-center flex justify-center items-center px-4 py-6">
+    <h1 class="typewriter break-words text-xl sm:text-3xl md:text-4xl lg:text-5xl font-bold  leading-snug ">
+    Dream ~ Code ~ Build
+    </h1>
+</div>
+
+
+
 
         <br>
         <!-- Subheading -->
