@@ -1,13 +1,16 @@
-<div class="container px-4 py-6 md:px-4 md:py-8">
+<div class="container px-4 py-6 md:px-8 md:py-8">
   <div class="grid grid-cols-1 md:grid-cols-10 gap-4">
     <!-- Photo Box -->
     <div class="md:col-span-3 glass-white rounded-sm p-4 shadow">
-        <div class="grid grid-cols-1 grid-rows-2 gap-2">
+        <div class="grid grid-cols-1 grid-rows-9 gap-2">
             <!-- image -->
-            <div class="row-span-1 glass-white rounded flex justify-center">
+            <div class="row-span-8 glass-white rounded flex justify-center shadow-lg">
+                <img src="{{ asset('media/mainIMG.jpg') }}"
+                     alt="Utsav Lankapati"
+                     class="w-full h-full object-cover" />
             </div>
             <!-- name -->
-            <div class="row-span-1 glass-white rounded flex justify-center text-1xl md:text-2xl py-2 px-2 font-bold">
+            <div class="row-span-1 glass-white rounded flex justify-center items-center text-center lg:text-4xl md:text-3xl sm:text-2xl py-2 px-2 font-bold">
                 <p>Utsav Lankapati</p>
             </div>
         </div>

@@ -8,6 +8,7 @@
     @vite (['resources/js/particleBackground.js'])
 
 
+
 </head>
 <body class="relative bg-color-primary overflow-x-hidden">
     <!-- Background SVG Layer -->

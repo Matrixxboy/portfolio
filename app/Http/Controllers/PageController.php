@@ -16,7 +16,7 @@ class PageController extends Controller
         return view("about");
     }
     public function projectsPage(){
-        return view("Projects");
+        return view("pages.projectsPage.projects");
     }
     public function certificatePage(){
         return view("pages.certificates.certificates");
