@@ -7,10 +7,10 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function admin(){
-        return view("Admin");
+        return view("admin.admin");
     }
     public function home(){
-        return view("home");
+        return view('home');
     }
     public function about(){
         return view("about");
@@ -19,13 +19,13 @@ class PageController extends Controller
         return view("Projects");
     }
     public function certificatePage(){
-        return view("Certificate");
+        return view("pages.certificates.certificates");
     }
     public function contactMe(){
-        return view("Contact Me");
+        return view('pages.contactPage.contactFORM');
     }
     public function Blogs(){
-        return view("Blogs");
+        return view("pages.blogs.blogs");
     }
 }
 
