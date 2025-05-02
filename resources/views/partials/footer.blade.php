@@ -126,10 +126,29 @@
         </div>
     </div>
 
+
     <!-- Footer Bottom -->
-    <div class="mt-8 text-sm text-gray-400">
-        <hr>
-        <br>
-        <p>&copy; 2025 The Matrix World. All rights reserved.</p>
+    <div class=" text-gray-400 text-sm  pt-4">
+  <!-- Divider -->
+  <div class="border-t border-gray-700 pt-6">
+    <!-- Legal & Policy Links -->
+    <div class="flex flex-wrap justify-center gap-6 mb-4">
+      <a href="/privacy-policy" class="hover:text-white transition-colors duration-200">Privacy Policy</a>
+      <span class="hidden sm:inline">|</span>
+      <a href="/terms-of-service" class="hover:text-white transition-colors duration-200">Terms of Service</a>
+      <span class="hidden sm:inline">|</span>
+      <a href="/cookie-policy" class="hover:text-white transition-colors duration-200">Cookie Policy</a>
+      <span class="hidden sm:inline">|</span>
+      <a href="/do-not-sell" class="hover:text-white transition-colors duration-200">Do Not Sell My Data</a>
+      <span class="hidden sm:inline">|</span>
+      <a href="/gdpr" class="hover:text-white transition-colors duration-200">GDPR Information</a>
     </div>
+
+    <!-- Copyright -->
+    <div class="text-center text-gray-500">
+      &copy; 2025 <span class="text-white font-medium">The Matrix World</span>. All rights reserved.
+    </div>
+  </div>
+</div>
+
 </div>

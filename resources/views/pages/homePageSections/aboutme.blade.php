@@ -5,7 +5,7 @@
         <div class="grid grid-cols-1 grid-rows-9 gap-2">
             <!-- image -->
             <div class="row-span-8 glass-white rounded flex justify-center shadow-lg">
-                <img src="{{ asset('media/mainIMG.jpg') }}"
+                <img src="{{ asset('media/utsav.svg') }}"
                      alt="Utsav Lankapati"
                      class="w-full h-full object-cover" />
             </div>
