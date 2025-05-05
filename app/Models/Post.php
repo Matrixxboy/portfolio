@@ -1,5 +1,3 @@
-<?php
-
 namespace App\Models;
 
 use Jenssegers\Mongodb\Eloquent\Model;
@@ -7,6 +5,6 @@ use Jenssegers\Mongodb\Eloquent\Model;
 class Post extends Model
 {
     protected $connection = 'mongodb';
-    protected $collection = 'posts';
+    protected $collection = 'posts'; // optional
     protected $fillable = ['title', 'content'];
 }
